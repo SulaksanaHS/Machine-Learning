@@ -1,0 +1,1390 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/SulaksanaHS/Machine-Learning/blob/main/Python1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "DV0SrR_gt9WJ"
+      },
+      "source": [
+        "# Python Basic-1\n",
+        "- mengenal fungsi print();\n",
+        "- tanda kurung buka;\n",
+        "- tanda kutip;\n",
+        "- kalimat 1 baris: Hello, World!;\n",
+        "- fungsi beberapa tanda kutip lain;\n",
+        "- tanda kurung tutup."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_SLKdDYQt9WK",
+        "outputId": "8424fb3d-51e8-4f30-803d-744a56b993f5"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello World!@#!#!$\n",
+            "test\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"Hello World!@#!#!$\")\n",
+        "print(\"test\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "3pr1ggFDt9WM"
+      },
+      "source": [
+        "#### Latihan: The print() function\n",
+        "\n",
+        "- Cetak kalimat \"Hello, Python!\"\n",
+        "- Cetak nama pertamamu\n",
+        "- Cetak nama pertamamu tanpa petik\n",
+        "- apakah ada bedanya double quote \"\" dan single quote '?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "X1aMjkgIt9WM",
+        "outputId": "170ddd39-1952-4ad7-bd1d-dfbee6cd70f0"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello, Python!\n",
+            "Abu\n",
+            "Abu\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"Hello, Python!\")\n",
+        "print(\"Abu\")\n",
+        "print('Abu')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "sJ-TJ8QAt9WM"
+      },
+      "source": [
+        "## Formatting dengan Special Character\n",
+        "`\\' = karakter spesial \"escaping nature\"\n",
+        "\n",
+        "`\\n` = untuk enter\n",
+        "\n",
+        "`\\` = escaping karakter\n",
+        "\n",
+        "```python\n",
+        "print() = berarti line kosong\n",
+        "```\n",
+        "\n",
+        "Tidak boleh ada 2 perintah dalam 1 baris\n",
+        "```python\n",
+        "print(\"nama depan\") print (\"nama belakang\")\n",
+        "```"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gmpjQbwtt9WM",
+        "outputId": "640df57b-6f93-4354-acf7-f6ef308770ea"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "Saya sudah sarapan tadi pagi\n",
+            " dan nanti siang makan lagi\n",
+            "Saya sudah sarapan tadi pagi\t dan nanti siang makan lagi\n"
+          ]
+        }
+      ],
+      "source": [
+        "print()\n",
+        "\n",
+        "print(\"Saya sudah sarapan tadi pagi\\n dan nanti siang makan lagi\")\n",
+        "print(\"Saya sudah sarapan tadi pagi\\t dan nanti siang makan lagi\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aEOzpiPqt9WM",
+        "outputId": "7e278ae8-0ef0-4df1-836e-4a2784b6ee3f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "nama saya \"abu\"\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"nama saya \\\"abu\\\"\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 5,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Z7aJ6Tvvt9WM",
+        "outputId": "5e029638-91fd-4b51-d5f4-86a1321aea47"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\"\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"\\\"\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9vZzH7IKt9WM",
+        "outputId": "1b6c8287-4ba0-4b4a-8a20-f79affffcb56"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "satu. dua. tiga.\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"satu.\",\"dua.\",\"tiga.\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 7,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kXZ6wnoat9WM",
+        "outputId": "812ce1ac-da6d-46e6-99b2-30a10c04f555"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nama saya Abu Salam\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"Nama saya\",\"Abu\", end=\" \")\n",
+        "print(\"Salam\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 8,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kbUeda3xt9WN",
+        "outputId": "aa1c0702-82f0-45e8-d891-6e1de0962883"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "satu, dua, tiga\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"satu\",\"dua\",\"tiga\", sep=\", \")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "iWZCGhI3t9WN"
+      },
+      "source": [
+        "## Latihan: The Print Function\n",
+        "\n",
+        "Buatlah Program untuk menghasilkan output:\n",
+        "`Programming***Essentials***in...Python`"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 9,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pJgpJN4Xt9WN",
+        "outputId": "e7c685df-a5a9-4510-ac89-2ba1df710fdc"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Programming Essentials in\n",
+            "Python\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Clue\n",
+        "print(\"Programming\",\"Essentials\",\"in\")\n",
+        "print(\"Python\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 10,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_Oe3cRxst9WN",
+        "outputId": "c08c1c81-4edf-4012-b68e-1d5ec8e0b639"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Programming***Essentials***in...PythonPython\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Programming***Essentials***in...PythonPython\n",
+        "\n",
+        "print(\"Programming\",\"Essentials\",\"in\", sep=\"***\", end=\"...\")\n",
+        "print(\"Python\"*2)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "Rw5zku2X1J04"
+      },
+      "execution_count": 10,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Cf56qnQ_t9WN"
+      },
+      "source": [
+        "## Latihan: Formatting the output\n",
+        "Membuat duplikasi pola gambar bintang"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 11,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ctwfNcw4t9WN",
+        "outputId": "177baff3-4db3-4a1d-88f3-465fed1e6b91"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "    *        *    \n",
+            "   * *      * *   \n",
+            "  *   *    *   *  \n",
+            " *     *  *     * \n",
+            "***   ******   ***\n",
+            "  *   *    *   *  \n",
+            "  *   *    *   *  \n",
+            "  *****    *****  \n"
+          ]
+        }
+      ],
+      "source": [
+        "#clue\n",
+        "\n",
+        "print(\"    *    \"*2)\n",
+        "print(\"   * *   \"*2)\n",
+        "print(\"  *   *  \"*2)\n",
+        "print(\" *     * \"*2)\n",
+        "print(\"***   ***\"*2)\n",
+        "print(\"  *   *  \"*2)\n",
+        "print(\"  *   *  \"*2)\n",
+        "print(\"  *****  \"*2)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 12,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e8RH0fzpt9WN",
+        "outputId": "7fbc8079-7fd5-4283-aeac-6e1be4181b0b"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "    *\n",
+            "   * *\n",
+            "  *   *\n",
+            " *     *\n",
+            "***   ***\n",
+            "  *   *\n",
+            "  *   *\n",
+            "  *****\n",
+            "    *\n",
+            "   * *\n",
+            "  *   *\n",
+            " *     *\n",
+            "***   ***\n",
+            "  *   *\n",
+            "  *   *\n",
+            "  *****\n",
+            "\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"    *\\n   * *\\n  *   *\\n *     *\\n***   ***\\n  *   *\\n  *   *\\n  *****\\n\"*2)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "zIyofelSt9WN"
+      },
+      "source": [
+        "# Literal\n",
+        "literal merupakan notasi untuk mensimbolkan nilai, dapat berupa string, boolean maupun angka (integer dan float)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 13,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IleHLSict9WN",
+        "outputId": "567c7ccb-c152-4e61-8f7b-018b9a4119fc"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "22\n",
+            "4\n",
+            "<class 'str'>\n",
+            "<class 'int'>\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"2\"*2)\n",
+        "print(2*2)\n",
+        "\n",
+        "print(type(\"2\"))\n",
+        "print(type(2))"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "6qxlzdIgt9WN"
+      },
+      "source": [
+        "## Integers vs Floats"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 14,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wwV0eU1lt9WO",
+        "outputId": "70bd86c7-7174-4431-e300-989719205943"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5 mempunyai tipe <class 'int'>\n",
+            "0.5 mempunyai tipe <class 'float'>\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(5, \"mempunyai tipe\", type(5))\n",
+        "print(.5, \"mempunyai tipe\", type(.5))"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "B417Rs8_t9WO"
+      },
+      "source": [
+        "\n",
+        "# Penulisan Float dan Integer\n",
+        "Python versi 3 membolehkan pemisahan digit integer dengan underscore \"_\"\n",
+        "agar mudah dibaca\n",
+        "```python\n",
+        "print (10_000_000)```\n",
+        "\n",
+        "Float dipisahkan dengan .(titik) bukan ,(koma)\n",
+        "cara penulisan float bisa 3 cara\n",
+        "\n",
+        "- 4.0\n",
+        "- .4 (terbaca nol koma 4)\n",
+        "- 4. (terbaca 4 koma nol)\n",
+        "\n",
+        "> 3e08 berarti $ 3 x 10 ^ 8 $  \n",
+        "3e-08 berarti $ 3 x 10 ^ {-8} $\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "9UqMGU5Lt9WO"
+      },
+      "source": [
+        "## String"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "feAA9dMIt9WO"
+      },
+      "source": [
+        "Buatlah program untuk menghasilkan output `I'm Monty Python`"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 14,
+      "metadata": {
+        "id": "x_qgclJDt9WO"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "i4THz_Nit9WO"
+      },
+      "source": [
+        "## Booelan\n",
+        "Logika benar salah, 1 bernilai benar (True) dan 0 bernilai salah (False)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 15,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PEXDVx01t9WO",
+        "outputId": "474d7134-5261-450d-84fa-9c8ce81b0a0a"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "False\n",
+            "True\n",
+            "False\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(True)\n",
+        "print(False)\n",
+        "\n",
+        "print(4>2)\n",
+        "print(3>4)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "gxWz7QIht9WO"
+      },
+      "source": [
+        "## None"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 16,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lb0RYCC2t9WO",
+        "outputId": "cc9e1829-03a2-48ac-9cfb-13109d2bf1dd"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n"
+          ]
+        }
+      ],
+      "source": [
+        "print()"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "o-9Mp8lEt9WO"
+      },
+      "source": [
+        "## Latihan: Python literals - strings\n",
+        "Buat output seperti ini dalam satu line <br/>\n",
+        "`\"I'm\"`<br/>\n",
+        "`\"\"learning\"\"`<br/>\n",
+        "`\"\"\"Python\"\"\"`"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 17,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "E-5YodC4t9WO",
+        "outputId": "8d1d08a7-123e-412a-dac1-af3ac975bd61"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\"I'm\"\n",
+            "\"\"learning\"\"\n",
+            "\"\"\"Python\"\"\"\n",
+            "\n",
+            "\"I'm\"\n",
+            "\"\"learning\"\"\n",
+            "\"\"\"Python\"\"\"\n",
+            "\n"
+          ]
+        }
+      ],
+      "source": [
+        "print('\"I\\'m\"\\n\"\"learning\"\"\\n\"\"\"Python\"\"\"')\n",
+        "\n",
+        "print(\"\"\"\n",
+        "\"I'm\"\n",
+        "\"\"learning\"\"\n",
+        "\\\"\"\"Python\"\"\\\"\n",
+        "\"\"\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Pf_i1RJWt9WO"
+      },
+      "source": [
+        "# Operator"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "6b-lctRdt9WO"
+      },
+      "source": [
+        "### Operator Aritmetika\n",
+        "\n",
+        "| Operator | Arti                                                                                          | Contoh                  |\n",
+        "|----------|--------------------------------------------------------------------------------------------------|--------------------------|\n",
+        "| +        | Penambahan                                                                   | x + y                 |\n",
+        "| -        | Pengurangan                                              | x - y                  |\n",
+        "| *        | Perkalian                                                                            | x * y                    |\n",
+        "| /        | Pembagian                                 | x / y                    |\n",
+        "| %        | Modulo - Sisa Pembagian                                 | x % y (sisa pembagian of x/y) |\n",
+        "| //       | Pembagian dan dibulatkan ke bawah | x // y                   |\n",
+        "| **       | Eksponen - Pangkat                                             | x**y (x pangkat y)  |"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 18,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Kqk2M62Yt9WO",
+        "outputId": "9a1b6ace-90f6-4b9f-c97b-cc544529560c"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "8\n",
+            "8.0\n",
+            "8.0\n",
+            "8.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(2 ** 3)\n",
+        "print(2 ** 3.)\n",
+        "print(2. ** 3.)\n",
+        "print(2. ** 3)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 19,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uBAPpZYzt9WO",
+        "outputId": "53ad521d-a6cf-427f-fea4-7a887f1ea5a4"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3.3333333333333335\n",
+            "3\n",
+            "2.0\n",
+            "2.0\n",
+            "0\n",
+            "4.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(10 / 3)\n",
+        "print(10 // 3)\n",
+        "\n",
+        "print(6 / 3.)\n",
+        "print(6 // 3.)\n",
+        "\n",
+        "print(-4 + 4)\n",
+        "print(-4. + 8)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "hSzf7Z-Bt9WO"
+      },
+      "source": [
+        "### Urutan Operator"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Pl4QT8j4t9WO"
+      },
+      "source": [
+        "| Prioritas| Operator |        |\n",
+        "|----------|----------|--------|\n",
+        "| 1        | +, -     | unary  |\n",
+        "| 2        | **       |        |\n",
+        "| 3        | *,/,//,% |        |\n",
+        "| 4        | +, -     | binary |"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 20,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aKBaeFWct9WP",
+        "outputId": "2f83c2b1-8375-461a-e48a-e39155ca4cd3"
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "17"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 20
+        }
+      ],
+      "source": [
+        "2 + 3 *5"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 21,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bW_i95Ldt9WP",
+        "outputId": "b711a97a-a5c9-47b2-c6f8-b2443317bef2"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "3\n",
+            "1\n",
+            "256\n",
+            "4\n",
+            "256\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(9 % 6 % 2)\n",
+        "print(9 % 6)\n",
+        "print(3 % 2)\n",
+        "\n",
+        "print(2 ** 2 ** 3)\n",
+        "print(2 ** 2)\n",
+        "print(2 ** 8)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 22,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PkjcugjCt9WS",
+        "outputId": "f2be3747-c51c-4d3a-bdec-b4fb3e3a60b4"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "print((5 * ((25 % 13)+100) / (2 * 13)) // 2)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "yKWxqRwpt9WT"
+      },
+      "source": [
+        "# Variabel\n",
+        "- Apa itu variabel?\n",
+        "- Bagaimana Aturan Penamaannya?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 23,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pMLPMpFIt9WT",
+        "outputId": "e4f1851c-857c-4682-e625-50d850da5240"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n"
+          ]
+        }
+      ],
+      "source": [
+        "var = 1\n",
+        "print(var)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "P93RjaVat9WT"
+      },
+      "source": [
+        "Tulis rumus ini dalam kode program:<br/> $c=\\sqrt{a^2+b^2}$"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 24,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "F6Ek3LRWt9WT",
+        "outputId": "e410c8fe-e012-4f4c-c214-637fcedc8f21"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "c =  3.605551275463989\n"
+          ]
+        }
+      ],
+      "source": [
+        "a=2.\n",
+        "b=3.\n",
+        "c=(a**2 + b**2) ** 0.5\n",
+        "print(\"c = \", c)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "oJC_WZ6Wt9WT"
+      },
+      "source": [
+        "## Latihan: Variables\n",
+        "\n",
+        "<b>Cerita Pendek:</b>\n",
+        "\n",
+        "Suatu waktu di kebun apel, Darjo memiliki 3 apel, Darno memiliki 5 apel dan Waginem memiliki 6 Apel. mereka sangat bahagia dan hidup lama. selesai.\n",
+        "\n",
+        "Tugas Anda\n",
+        "- buat variabe : `Darjo`, `Darno` dan `Waginem`\n",
+        "- isi nilai sesuai dengan jumlah apel yang mereka miliki\n",
+        "- cetak nama variabel dan jumlah apel setiap variabel dalam 1 baris, pisahkan dengan koma\n",
+        "- buat variabel baru dengan nama `totalApel` yang berisi penjumlahan seluruh apel yang mereka miliki\n",
+        "- coba otak atik code dengan membuat variable baru, diisi dengan nilai lain, dan dihitung dengan operator aritmetik lainnya"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 25,
+      "metadata": {
+        "id": "zXTXcVKct9WT"
+      },
+      "outputs": [],
+      "source": [
+        "Darjo = 2\n",
+        "Darno = 5\n",
+        "Waginem = 6"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "DoRAS90ft9WT"
+      },
+      "source": [
+        "## Latihan: Variables: a simple converter\n",
+        "\n",
+        "Mil dan kilometer adalah satuan panjang\n",
+        "\n",
+        "1 mil memiliki panjang sekitar 1.61 kilometer, buatlah program konversi di bawah ini\n",
+        "- mil ke kilometer;\n",
+        "- kilometer to mil.\n",
+        "jangan ganti apapun terhadap kode yang sudah ada. tulis kodemu pada tanda ###, kemudian hapus tanda tersebut. Uji kode Anda dengan data yang kami sajikan dalam source code"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "SLTeqlQpt9WT"
+      },
+      "source": [
+        "Kode:\n",
+        "```python\n",
+        "kilometer = 12.25\n",
+        "mil = 7.38\n",
+        "\n",
+        "mil_ke_kilometer = ###\n",
+        "kilometer_ke_mil = ###\n",
+        "\n",
+        "print(mil, \"1 mil adalah\", round(miles_to_kilometers, 2), \"kilometer\")\n",
+        "print(kilometer, \"1 kilometer adalah\", round(kilometers_to_miles, 2), \"mil\")\n",
+        "```"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 26,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "32izcA28t9WT",
+        "outputId": "7eec8f15-3898-4bc7-d53c-40eff8c4f64f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "7.38 1 mil adalah 11.88 kilometer\n",
+            "12.25 1 kilometer adalah 7.61 mil\n"
+          ]
+        }
+      ],
+      "source": [
+        "kilometer = 12.25\n",
+        "mil = 7.38\n",
+        "\n",
+        "miles_to_kilometers = mil * 1.61\n",
+        "kilometers_to_miles = kilometer / 1.61\n",
+        "\n",
+        "print(mil, \"1 mil adalah\", round(miles_to_kilometers, 2), \"kilometer\")\n",
+        "print(kilometer, \"1 kilometer adalah\", round(kilometers_to_miles, 2), \"mil\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "xjBhDjfUt9WT"
+      },
+      "source": [
+        "## Latihan: Operators and expressions\n",
+        "\n",
+        "Skenario\n",
+        "lihatlah kode dalam editor, nilai tersebut termasuk tipe float, letakkan nilai tersebut dalam variabel x, dan print variabel tersebut dalam variabel y. Tugasmu adalah melengkapi kode di bawah ini untk menyelesaikan persamaan di bawah\n",
+        "\n",
+        "$3x^3 - 2x^2 + 3x - 1$\n",
+        "\n",
+        "Hasil harus disimpan dalam variabel y.\n",
+        "ingat bahwa aljabar klasik sering menghilangkan operator perkalian, kamu harus menggunakannya secara eksplisit. Ingat bagaimana cara mengubah tipe data untuk memastikan bahwa x bertipe float.\n",
+        "\n",
+        "usahakan kodemu mudah dibaca, uji kode dengan data yang telah kami berikan.\n",
+        "\n",
+        "```python\n",
+        "x =  # hardcode your test data here\n",
+        "x = float(x)\n",
+        "# tulis kodemu disini\n",
+        "print(\"y =\", y)\n",
+        "```\n",
+        "\n",
+        "Test Data:\n",
+        "```python\n",
+        "#input\n",
+        "x = 0\n",
+        "x = 1\n",
+        "x = -1\n",
+        "\n",
+        "#output\n",
+        "y = -1.0\n",
+        "y = 3.0\n",
+        "y = -9.0\n",
+        "```"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 27,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zYIO6LWdt9WT",
+        "outputId": "d5b6f58e-67af-4c4f-a903-6e020d98bc5c"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n"
+          ]
+        }
+      ],
+      "source": [
+        "var = 2\n",
+        "var = 3\n",
+        "print(var)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "xZZeedS1t9WT"
+      },
+      "source": [
+        "### Exercise\n",
+        "\n",
+        "Apa outputnya?\n",
+        "```python\n",
+        "var = 2\n",
+        "var = 3\n",
+        "print(var)\n",
+        "```\n",
+        "\n",
+        "Nama variabel mana yang ilegal?\n",
+        "```python\n",
+        "my_var\n",
+        "m\n",
+        "101\n",
+        "averylongvariablename\n",
+        "m101\n",
+        "m 101\n",
+        "Del\n",
+        "del\n",
+        "```\n",
+        "\n",
+        "Apa Outputnya?\n",
+        "```python\n",
+        "a = '1'\n",
+        "b = \"1\"\n",
+        "print(a + b)\n",
+        "```\n",
+        "\n",
+        "Apa outputnya?\n",
+        "\n",
+        "```python\n",
+        "a = 6\n",
+        "b = 3\n",
+        "a /= 2 * b\n",
+        "print(a)\n",
+        "```"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "MMw8Vdl9t9WT"
+      },
+      "source": [
+        "# Comments\n",
+        "Latihan: mana yang seharusnya menjadi komentar, mana yang tidak"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 28,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "k8FWawSjt9WT",
+        "outputId": "20b8a8fc-324b-43bd-e375-7d69cb173397"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hai...\n"
+          ]
+        }
+      ],
+      "source": [
+        "#test\n",
+        "print(\"Hai...\")\n",
+        "#test1\n",
+        "#test2"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "0L5llYJ2t9WT"
+      },
+      "source": [
+        "# How to talk to a computer\n",
+        "katakunci `input()`<br/>\n",
+        "hasil dari fungsi `input()` adalah <b>string</b>.<br/>\n",
+        "Tidak bisa langsung dikenakan ke operasi aritmetika"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 29,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "D5hmkNZXt9WT",
+        "outputId": "dd2d90c0-5209-4e84-8185-5efb8878ee57"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Katakan sesuatu...\n",
+            "Udinus Jaya\n",
+            "mmmmm Udinus Jaya  Oke\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"Katakan sesuatu...\")\n",
+        "sesuatu = input()\n",
+        "print(\"mmmmm\", sesuatu, \" Oke\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "qPmooDdlt9WU"
+      },
+      "source": [
+        "### type casting"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 30,
+      "metadata": {
+        "id": "Zid1k-s7t9WU",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "ee4b45be-142e-4988-9ed9-c4ac94fbc74e"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukan Angka : 212401\n",
+            "Pangkat duanya adalah  45114184801.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "angka = float(input(\"Masukan Angka : \"))\n",
+        "print(\"Pangkat duanya adalah \", angka**2)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "4TGMPby1t9WU"
+      },
+      "source": [
+        "#### Replication\n",
+        "coba membuat cetak bangun datar persegi dengan replication\n",
+        "\n",
+        "![image.png](attachment:image.png)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 31,
+      "metadata": {
+        "id": "RvAtn8RVt9WU",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "796736cf-77bf-472e-a097-d741cbfa73e2"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "+----------+\n",
+            "|          |\n",
+            "|          |\n",
+            "|          |\n",
+            "|          |\n",
+            "|          |\n",
+            "+----------+\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"+\" + 10*\"-\" + \"+\")\n",
+        "print((\"|\" + 10*\" \" + \"|\\n\") * 5, end=\"\")\n",
+        "print(\"+\" + 10*\"-\" + \"+\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "VyXrk7Nyt9WU"
+      },
+      "source": [
+        "## Latihan : Simple input and output\n",
+        "Coba utak atik perintah kode dibawah ini\n",
+        "``` python\n",
+        "# Masukkan nilai a dalam float\n",
+        "# Masukkan nilai b dalam float\n",
+        "\n",
+        "# hitung hasil penambahan disini\n",
+        "# hitung hasil pengurangan disini\n",
+        "# hitung hasil perkalian disini\n",
+        "# hitung hasil pembagian disini\n",
+        "\n",
+        "\n",
+        "print(\"\\nYeahhhh\")\n",
+        "```"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ytFYa8Z0t9WU"
+      },
+      "source": [
+        "## Latihan: Operators and expressions\n",
+        "Kerjakan rumus berikut:\n",
+        "<img src=\"images/modul2_pembagian.PNG\" width=200px />\n",
+        "\n",
+        "input/output yang diharapkan\n",
+        "```python\n",
+        "x = 1\n",
+        "y = 0.6000000000000001\n",
+        "\n",
+        "x = 10\n",
+        "y = 0.09901951266867294\n",
+        "```"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 32,
+      "metadata": {
+        "id": "18A_VDugt9WU",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "49e1298e-7ac2-4f43-efb0-8a608e18dfc4"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\"I'm\"\n",
+            " \"\"learning\"\"\n",
+            " \"\"\"Python\"\"\"\n",
+            "\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"\\\"I'm\\\"\\n \\\"\\\"learning\\\"\\\"\\n \\\"\\\"\\\"Python\\\"\\\"\\\"\\n\")"
+      ]
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3 (ipykernel)",
+      "language": "python",
+      "name": "python3"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "ipython",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.9.5"
+    },
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
